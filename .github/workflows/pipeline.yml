@@ -1,14 +1,14 @@
 name: Pipeline
-  on:
-    push:
-      branches:
-        - main
-        -gh-actions
+on:
+  push:
+    branches:
+      - main
+      -gh-actions
 
-    pull_request:
-      branches:
-        - main
-        -gh-actions
+  pull_request:
+    branches:
+      - main
+      -gh-actions
 
 job:
   run-automated-tests:
