@@ -30,7 +30,7 @@ jobs:
         run: cat db-BACKUP.json > db.json
       
       - name: Start application
-        run: npm run server
+        run: npm run server &
 
       - name: Run tests
         run: npm run run-tests
