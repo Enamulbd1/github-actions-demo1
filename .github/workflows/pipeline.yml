@@ -38,7 +38,7 @@ jobs:
       - name: Save test run artifacts
         run: actions/upload-artifact@v4
         with:
-          name: playwright test-results
+          name: playwright-test-results
           path: ./playwright-report
           if-no-files-found: warn
           include-hidden-files: false
