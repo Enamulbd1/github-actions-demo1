@@ -1,4 +1,6 @@
 name: Pipeline
+
+
 on:
   push:
     branches:
@@ -10,9 +12,10 @@ on:
       - main
       -gh-actions
 
-job:
+jobs:
   run-automated-tests:
     run-on: ubuntu-latest
+    
     steps:
       - name: 'Checkout code / Fetch code'
         run: echo 'Fetch code'
